@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    
+    <label for="hewan">Hewan</label>
+    <select id="hewan">
+        <option value="Gorilla">Gorilla</option>
+        <option value="Kelinci">Kelinci</option>
+        <option value="Panda">Panda</option>
+        <option value="Jerapah">Jerapah</option>
+        <option value="Kura kura">Kura kura</option>
+
+    </select>
+    <button onclick="cetakGambar()">Cetak Gambar</button>
+    
+    <img id="gambar" src="">
+
+    <script>
+        
+        function cetakGambar() {
+            const hewan = document.getElementById('hewan');
+            const gambar = document.getElementById('gambar');
+
+            if (hewan.value === 'Gorilla') {
+                gambar.src = 'https://okdiario.com/img/2019/11/18/lo-que-debes-saber-sobre-el-gorila-1.jpg'
+            }
+            if (hewan.value === 'Kelinci') {
+                gambar.src = 'https://asset.kompas.com/crops/00Bui5wlErIQHh0DcQkevgB5xgg=/192x130:1728x1154/750x500/data/photo/2021/09/29/615414215159d.jpg'
+            }
+            if (hewan.value === 'Panda') {
+                gambar.src = 'https://www.netbizgroup.co.uk/wp-content/uploads/2014/05/Panda-Algorithm-SEO-1024x1024.jpg'
+            }
+            if( hewan.value === 'Jerapah') {
+                gambar.src = 'https://2.bp.blogspot.com/-qNsuUcWGR3g/V5BzfR_teJI/AAAAAAAACAM/RfbbVRTYG_Qtkg9EPB9njDJXhakzaprLQCLcB/s1600/Gambar-jerapah-14.JPG'
+            }
+            if (hewan.value === 'Kura kura') {
+                gambar.src = 'https://wallpapercave.com/wp/wp7898204.jpg'
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
